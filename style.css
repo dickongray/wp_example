@@ -1,0 +1,214 @@
+/*
+Theme Name: 
+Theme URI: 
+Description: Child theme for the Twenty Twelve theme
+Author: 
+Author URI: http://grayelephant.co.nz/
+Template: twentytwelve
+Version: 0.1
+*/
+
+@import "../twentytwelve/style.css";
+
+/*
+----------------------------------------------------------------
+	B A S E
+---------------------------------------------------------------- */
+body {
+	font-family: 'Merriweather', Georgia, serif;
+	font-size: 16px;
+	color: #333;
+	width: 100;
+}
+body.custom-font-enabled {
+    font-family: 'Merriweather', Georgia, serif;
+}
+/* L I N K S */
+
+a:link, a:visited {
+	color: #09c;
+}
+	
+a:hover {
+	color: #c33;
+}
+a, a:hover, a:focus, a:active, a.active {
+    outline: 0 none;
+}
+/*
+----------------------------------------------------------------
+	T Y P O G R A P H Y - S T R U C T U R E
+---------------------------------------------------------------- */
+h1 { 
+	font-family: 'Merriweather', Georgia, serif; 
+	font-weight: 700;
+	color: #141b41; 
+	font-size: 4em;
+}
+span{ 
+	font-family: 'Merriweather', Georgia, serif; 
+	font-weight: 300;
+	font-style: italic;
+	color: #999; 
+	font-size: 1.3em;
+}
+h2 {
+	margin-bottom: 22px;
+	font-weight: 600;
+	font-size: 1.5em;
+	color: #61c6c6;
+}
+h3 {
+	font-size: 16px;
+	font-weight: 600;
+	color: #152e47;
+}
+h4 {
+	font-size: 12px;
+	font-weight: normal;
+	text-transform:  uppercase;
+	letter-spacing: .2em;
+	color: #152e47;
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+p {
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: .1em;
+	max-width: 960px;
+	
+}	
+blockquote {
+	border-left: 1px solid #dcdee1;
+	font-size: 13px;
+	line-height: 18px ;
+	color: #666;
+}
+
+/*
+----------------------------------------------------------------
+	T Y P O G R A P H Y - S P E C I F I C S
+---------------------------------------------------------------- */
+.site-header h1 {
+	font-family: 'Merriweather', Georgia, serif; 
+	font-weight: 700;
+	color: #131a40; 
+	font-size: 4em;
+	text-align: center;
+}
+.site-header h1 a{
+	color: #131a40;
+}
+.site-header h1 a:hover{
+	color: #61c6c6;
+}
+.entry-header, .entry-title h1{
+	border-bottom: 1px dashed #a0a7ae;
+	padding: 19px 0 8px;
+	margin-bottom: 22px;
+	font-weight: 600;
+	font-size: 1.5em;
+	color: #61c6c6;
+}
+.entry-header, .entry-title a{
+color: #61c6c6;
+}
+.site-header h2 {
+    text-align: center;
+    font-family: 'Merriweather', Georgia, serif; 
+	font-weight: 300;
+	font-style: italic;
+	color: #999; 
+	font-size: 1.3em;
+}
+.site-description h2 {
+    text-align: center;
+    font-family: 'Merriweather', Georgia, serif; 
+	font-weight: 300;
+	font-style: italic;
+	color: #999; 
+	font-size: 1.3em;
+}
+ .site-header h2 a {
+    color: #999;
+}
+
+#frontpagepostpull a:link, a:visited {
+    color: #61c6c6;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 22px;
+    padding: 19px 0 8px;
+    text-decoration: none;
+}
+#frontpagepostpull h4{
+	border-bottom: 1px dashed #a0a7ae;
+	padding: 19px 0 8px;
+	margin-bottom: 22px;
+	color: #61c6c6;
+	font-size: 1em;
+}
+#frontpagepostpull h4 a:hover{
+	color: #131a40;
+}
+/*
+----------------------------------------------------------------
+	N A V I G A T I O N - S P E C I F I C S
+---------------------------------------------------------------- */
+.main-navigation div.nav-menu > ul {
+    text-align: center;
+}
+/*----------------------------------------------------------------
+M O B I L E	- N A V I G A T I O N remove for button
+---------------------------------------------------------------- */
+@media screen and (max-width: 680px) {
+.main-navigation div.nav-menu > ul {
+        display: inline-block !important;
+}
+.menu-toggle {
+        display: none !important;
+}
+.main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul {
+        display: inline-block !important;
+}
+.main-navigation {
+	text-align: center;
+}
+.main-navigation li {
+	margin-top: 0;
+	font-size: 12px;
+	font-size: 0.857142857rem;
+	line-height: 1.42857143;
+	display: inline;
+	padding: 10px;
+	text-transform: uppercase;
+}
+.main-navigation a {
+	color: #5e5e5e;
+}
+.main-navigation a:hover,
+.main-navigation a:focus {
+	color: #21759b;
+}
+.main-navigation ul.nav-menu,
+.main-navigation div.nav-menu > ul {
+	display: none;
+}
+.main-navigation ul.nav-menu.toggled-on,
+.menu-toggle {
+	display: inline-block;
+}
+.main-navigation li a,
+.main-navigation li {
+		display: inline-block;
+		text-decoration: none;
+}
+.main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul {
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    display: inline-block !important;
+    text-align: center;
+    width: 100%;
+}
+}
